@@ -1,3 +1,7 @@
+github.com/caseymrm/askm v1.0.0 h1:Ff5QN5GwuyCzg63++hU1jV+1JVYHYd0sw6KUkVd2GiQ=
+github.com/caseymrm/askm v1.0.0/go.mod h1:raj+vtH8SsGkuSg1/970qaONNyNlIb7zFv2LDVk6j+U=
+github.com/caseymrm/menuet v1.0.3 h1:+JC25L0mxE9a5RUtY88JNZV0awQSbObw/kqKbBWYMTs=
+github.com/caseymrm/menuet v1.0.3/go.mod h1:Vdn4A7NdnGnx9CwlhyhAn4ii5xrpQkvaONdzpTyJ4j0=
 github.com/gen2brain/beeep v0.0.0-20230907135156-1a38885a97fc h1:NNgdMgPX3j33uEAoVVxNxillDPnxT0xbGv8uh4CKIAo=
 github.com/gen2brain/beeep v0.0.0-20230907135156-1a38885a97fc/go.mod h1:0W7dI87PvXJ1Sjs0QPvWXKcQmNERY77e8l7GFhZB/s4=
 github.com/go-toast/toast v0.0.0-20190211030409-01e6764cf0a4 h1:qZNfIGkIANxGv/OqtnntR4DfOY2+BgwR60cAcu/i3SE=

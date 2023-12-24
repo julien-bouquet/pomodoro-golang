@@ -6,6 +6,7 @@ import (
 	"os"
 	"time"
 
+	"github.com/caseymrm/menuet"
 	"github.com/gen2brain/beeep"
 )
 
@@ -21,6 +22,11 @@ func main() {
 	slog.Info(fmt.Sprintf("%s start", AppName))
 	defer slog.Info(fmt.Sprintf("%s stop", AppName))
 	countWorkSession := 0
+	go timerMenu()
+	app := menuet.App()
+	app.Name = "Not a Fan"
+	app.Label = "com.github.caseymrm.notafan"
+	app.RunApplication()
 	for {
 		runWorkSession()
 		countWorkSession = (countWorkSession + 1) % (countWorkSessionBeforeLongBreak + 1)
@@ -63,5 +69,14 @@ func sleep(waitDuration time.Duration, message string) {
 		slog.Info(fmt.Sprintf(message, waitDuration))
 		time.Sleep(time.Second)
 		waitDuration -= time.Second
+	}
+}
+
+func timerMenu() {
+	for {
+		menuTitle := fmt.Sprintf("%s - %s", AppName, time.Now().Format("15:04:05"))
+		menuet.App().SetMenuState(&menuet.MenuState{
+			Title: menuTitle,
+		})
 	}
 }
